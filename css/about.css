@@ -50,7 +50,8 @@ nav.scrolled {
 /* ************************ */
 
 .bg-img-8 {
-    background: linear-gradient( rgba(19, 184, 170, 0.5), rgba(13, 156, 23, 0.5)), url(../images/10.jpg);
+    background: linear-gradient( rgba(13, 65, 89, 0.8), rgba(249, 224, 131, 0.6)), url(../images/10.jpg);
+    /* background: linear-gradient( #0D4159, #F9E083), url(../images/10.jpg); */
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -313,7 +314,6 @@ Bootstrap 4 breakpoints
         font-size: 3rem;
     }
 }
-
 
 .container-bottom {
     position: relative;
