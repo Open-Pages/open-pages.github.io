@@ -315,3 +315,13 @@ Bootstrap 4 breakpoints
         font-size: 3rem;
     }
 }
+
+.container-bottom {
+    position: relative;
+}
+
+#fixed-button {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
