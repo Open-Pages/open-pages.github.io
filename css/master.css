@@ -65,6 +65,7 @@ body {
     height: 100vh;
     color: white;
     font-family: "Source Sans Pro";
+    background-attachment: fixed;
 }
 
 
