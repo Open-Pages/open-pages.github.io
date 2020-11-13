@@ -36,23 +36,22 @@ body {
 
 /* Scroll Effects */
 
-.nav {
-    background-color: rgb(94, 191, 223);
+.nav_ {
+    background-color: #4cd137;
     padding: 15px;
 }
 
 nav.scrolled {
-    background: rgb(94, 191, 223) !important;
+    background: #4cd137 !important;
     padding: 1px;
 }
 
 
 /* ************************ */
 
-
-
 .bg-img-8 {
     background: linear-gradient( rgba(19, 184, 170, 0.5), rgba(13, 156, 23, 0.5)), url(../images/10.jpg);
+    background-attachment: fixed;
     background-size: cover;
     height: 100vh;
     color: white;
@@ -61,6 +60,17 @@ nav.scrolled {
 
 
 /* **************** */
+
+hr {
+    border: none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+}
 
 
 /* NAVBAR */
@@ -74,12 +84,13 @@ nav.scrolled {
 
 /* ********************** */
 
-.jumbotron {
+.top-jumbo {
     padding-top: 170px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    clip-path: circle(170vh at 50% -80vh);
 }
 
 .op-title {
@@ -89,6 +100,16 @@ nav.scrolled {
 
 .op-text {
     font-family: "Ubuntu";
+}
+
+.ababa {
+    background-image: url(../images/adey+abeba+flowers.jpg) !important;
+    background-attachment: fixed;
+    padding-top: 170px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 
@@ -130,6 +151,7 @@ nav.scrolled {
 .nav-link-nav-bar:hover {
     color: green;
 }
+
 .logo {
     height: 100px;
     margin-top: 20px;
@@ -164,11 +186,42 @@ nav.scrolled {
 /* *************** */
 
 
+/* Gallery */
+
+.gallery-row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
 
 
+/* Create four equal columns that sits next to each other */
+
+.gallery-column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.gallery-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.gallery-column img :hover {
+    filter: grayscale(100%);
+    display: none;
+}
 
 
-
+/* **************** */
 
 
 /*
@@ -247,7 +300,9 @@ Bootstrap 4 breakpoints
     h1 {
         font-size: 2.5rem;
     }
-    
+    .about {
+        width: 900px;
+    }
 }
 
 
